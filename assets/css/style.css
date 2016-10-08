@@ -21,6 +21,7 @@ a {
 
 a:hover, a:focus {
     text-decoration: none;
+    color: #e46c09;
 }
 
 .img-portfolio {
@@ -99,10 +100,10 @@ footer {
 }
 
 .banner {
-    background: url(../images/bgHeader.jpg) no-repeat;
+    background: url(../images/4.jpg) no-repeat;
     background-size: cover;
     background-position: center center;
-    height: 113px;
+    height: 160px;
 }
 
 .navbar {
@@ -116,10 +117,33 @@ footer {
 
 .navbar-inverse .navbar-nav>li>a {
     color: white;
+    text-transform: uppercase;
 }
 
-.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover {
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-nav li a:hover {
+    background: #2970b8;
+    color: white;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover {
+    background-color: #2970b8;
+    color: white;
+}
+
+.navbar-nav>li>.dropdown-menu {
     background: #337ab7;
+    min-width: 200px;
+}
+
+.navbar-nav>li>.dropdown-menu li {
+
+}
+
+.navbar-nav>li>.dropdown-menu a {
+    color: white;
+    padding: 8px 10px;
+    text-transform: uppercase;
+    font-size: 13px;
 }
 
 #myCarousel img {
@@ -299,6 +323,7 @@ footer h4 {
 
 .breadcrumb {
     padding: 10px 15px;
+    margin-bottom: 30px;
 }
 
 .breadcrumb li a {
@@ -342,4 +367,17 @@ footer h4 {
 
 .help-block {
     margin-bottom: 30px;
+}
+
+.page-title {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+ul.nav li.dropdown:hover > ul.dropdown-menu {
+    display: block;
+}
+
+.news-wr .item {
+    margin-bottom: 20px;
 }
