@@ -17,6 +17,8 @@
 
     <link href="assets/css/select2.min.css" rel="stylesheet">
 
+    <link href="assets/css/slick.css" rel="stylesheet">
+
     <!-- Custom CSS -->
     <link href="assets/css/style.css" rel="stylesheet">
 
@@ -25,6 +27,7 @@
     <script src="assets/js/select2.min.js"></script>
     <script src="assets/js/bootstrap-datepicker.min.js"></script>
     <script src="assets/js/bootstrap-datepicker.vi.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
     <script src="assets/js/script.js"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -57,7 +60,7 @@
                         <a href="index.html">Trang chủ</a>
                     </li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Giới thiệu</a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Giới thiệu <span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li>
                                 <a href="about-us.html">Về chúng tôi</a>
@@ -73,8 +76,13 @@
                             </li>
                         </ul>
                     </li>
-                    <li>
-                        <a href="power.html" class="dropdown-toggle">Nguồn lực khai thác</a>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Nguồn lực khai thác <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="power.html">Sơ đồ cảng</a>
+                            </li>
+                        </ul>
                     </li>
                     <li>
                         <a href="news.html">Tin tức</a>
@@ -134,7 +142,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-9">
-                    <div id="leader" style="margin-bottom: 30px;" class="row">
+                    <div id="leader" class="row">
                         <div class="col-lg-12">
                             <div class="cap">
                                 <div class="boder_cap">
@@ -143,17 +151,17 @@
                             </div>
                         </div>
                         <div class="row" style="padding: 0 15px;">
-                            <div class="col-xs-6 col-sm-4 text-center">
+                            <div class="col-sm-4 item">
                                 <img src="assets/images/2.jpg" class="img-responsive" style="width: 260px; height: 300px;" alt="Generic placeholder thumbnail">
                                 <h4>Vũ Bằng Việt</h4>
                                 <p>Thành viên HĐQT</p>
                             </div>
-                            <div class="col-xs-6 col-sm-4 text-center">
+                            <div class="col-sm-4 item">
                                 <img src="assets/images/3.jpg" class="img-responsive" style="width: 260px; height: 300px;" alt="Generic placeholder thumbnail">
                                 <h4>Đoàn Hữu Hùng</h4>
                                 <p>Thành viên HĐQT</p>
                             </div>
-                            <div class="col-xs-6 col-sm-4 text-center">
+                            <div class="col-sm-4 item">
                                 <img src="assets/images/5.jpg" class="img-responsive" style="width: 260px; height: 300px;" alt="Generic placeholder thumbnail">
                                 <h4>Nguyễn Văn Lạng</h4>
                                 <p>Giám đốc</p>
@@ -285,6 +293,37 @@
                             </div>
                         </div>
                     </div>
+
+                    <div id="partner" style="margin-top: 40px; margin-bottom: 40px;" class="row">
+                        <div class="col-lg-12">
+                            <div class="cap">
+                                <div class="boder_cap">
+                                    <h1><a href="#" target="_self">Đối tác</a></h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="partner-wr col-sm-12">
+                            <div class="item">
+                                <img src="assets/images/adm_logo.jpg" class="img-responsive" style="width: 140px; height: 61px;" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="assets/images/dabaco.jpg" class="img-responsive" style="width: 140px; height: 61px;" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="assets/images/adm_logo.jpg" class="img-responsive" style="width: 140px; height: 61px;" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="assets/images/dabaco.jpg" class="img-responsive" style="width: 140px; height: 61px;" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="assets/images/adm_logo.jpg" class="img-responsive" style="width: 140px; height: 61px;" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="assets/images/dabaco.jpg" class="img-responsive" style="width: 140px; height: 61px;" alt="">
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
                 <div class="col-md-3">
                     <div id="calendar-widget" class="widget">
@@ -331,7 +370,7 @@
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-sm-12">
                     <h4>Vui lòng liên hệ với chúng tôi theo thông tin bên dưới</h4>
                     <p>Công ty cổ phần cảng tổng hợp Cái Lân Quảng Ninh</p>
                     <p>Tổ 3 khu 6b, phường Hồng Hải, Hạ Long, Quảng Ninh</p>
@@ -339,8 +378,10 @@
                     <p>Fax: 0333.838.919</p>
                 </div>
             </div>
-            <div class="row">
-                <p class="text-center">&copy; 2016 Bản quyền thuộc về công ty cổ phần cảng tổng hợp Cái Lân Quảng Ninh.</p>
+            <div class="row copytext">
+                <div class="col-sm-12">
+                    <p>&copy; 2016 Bản quyền thuộc về công ty cổ phần cảng tổng hợp Cái Lân Quảng Ninh.</p>
+                </div>
             </div>
         </div>
     </footer>
