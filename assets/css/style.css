@@ -376,6 +376,7 @@ footer h4 {
 
 .page-title {
     text-transform: uppercase;
+    text-align: center;
     margin-bottom: 20px;
 }
 
@@ -452,6 +453,22 @@ ul.nav li .caret {
 
     footer .copytext {
         margin: 15px 0 15px 0;
+    }
+
+    .img-responsive {
+        width: 100%;
+    }
+
+    #widget-menu {
+        margin-top: 40px;
+    }
+
+    .datepicker table {
+        text-align: left;
+    }
+
+    .page-title {
+        text-align: left;
     }
 }
 
